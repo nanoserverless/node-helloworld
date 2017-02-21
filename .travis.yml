@@ -4,7 +4,7 @@ services:
   - docker
 
 script:
-  - [ "$TRAVIS_BRANCH" = "master" ] && TRAVIS_BRANCH="latest"
+  - [ "$TRAVIS_BRANCH" == "master" ] && TRAVIS_BRANCH="latest"
   - docker build -t nanoserverless/node-helloworld:$TRAVIS_BRANCH -f Dockerfile .
   - echo "my@mail.com" | docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
   - docker push nanoserverless/node-helloworld:$TRAVIS_BRANCH
