@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanoserverless/node-helloworld.git"
+  },
+  "author": "nanoserverless",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nanoserverless/node-helloworld/issues"
+  },
+  "homepage": "https://github.com/nanoserverless/node-helloworld#readme"
+}
